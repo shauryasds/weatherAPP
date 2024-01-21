@@ -45,9 +45,10 @@ body {
   margin: auto;
   background-color: whitesmoke;
 }
-.container:hover {
-  background-color: rgb(222, 201, 201);
-  cursor: pointer;
+  .main:hover{
+    background-color: rgb(222, 201, 201);
+  
+cursor: pointer;
 }
 .search {
   display: flex;
@@ -127,10 +128,7 @@ body {
     background-color: whitesmoke;
 
 }
-  .main:hover{
-    background-color: rgb(222, 201, 201);
-  
-}
+
 .txt h1{
     font-size: 4vw;
 }
