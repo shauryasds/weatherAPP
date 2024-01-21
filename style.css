@@ -125,7 +125,10 @@ body {
   .main {
     background-color: whitesmoke;
 
-  }
+}
+.txt h1{
+    font-size: 4vw;
+}
   .search {
     margin-top: 10vw;
   }
