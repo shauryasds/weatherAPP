@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.welcomeHover {
+  position: absolute;
+  padding: 40vh 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./cmain.jpg");
+  z-index: 1000;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #2e80c6, #366717);
+}
+
+.container {
+  border: 2px solid black;
+  min-height: 90vh;
+  width: 40vw;
+  padding: 4vh 0;
+  border-radius: 50px;
+  margin: auto;
+  background-color: whitesmoke;
+}
+.container:hover {
+  background-color: rgb(222, 201, 201);
+  cursor: pointer;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search input {
+  width: 60%;
+  height: 2vh;
+  border: 2px solid black;
+
+  /* border: 0; */
+  border-radius: 20px;
+  padding: 3vh;
+  color: black;
+}
+.search img {
+  height: 4vh;
+  margin-left: 4vw;
+  mix-blend-mode: color-burn;
+}
+.weather {
+  margin-top: 40px;
+  text-align: center;
+  padding: 10px;
+}
+.weather > h1 {
+  margin-bottom: 4vh;
+  font-weight: 900;
+  font-size: 3vw;
+  color: rgb(0, 0, 0);
+}
+#weatherlogo {
+  margin-bottom: 2vh;
+  width: 2vw;
+  border-radius: 53px;
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10vh;
+}
+.col {
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  flex-direction: row;
+  font-size: 2vw;
+  justify-content: center;
+  align-items: center;
+  /* position: relative;
+    bottom: 2vw; */
+}
+#weatherlogo,
+.col img {
+  mix-blend-mode: darken;
+  width: 9vw;
+}
+.col p {
+  margin-bottom: 2vh;
+}
+
+@media only screen and (max-width: 920px) {
+    .main{
+        background: whitesmoke;
+    }
+  .container {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+  .main {
+    background-color: whitesmoke;
+
+  }
+  .search {
+    margin-top: 10vw;
+  }
+  .weather > h1 {
+    font-size: 9vw;
+  }
+  #weatherlogo,
+  .col img {
+    width: 25vw;
+  }
+  .col div > * {
+    font-size: 4vw;
+  }
+}
