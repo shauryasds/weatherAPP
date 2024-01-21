@@ -127,6 +127,10 @@ body {
     background-color: whitesmoke;
 
 }
+  .main:hover{
+    background-color: rgb(222, 201, 201);
+  
+}
 .txt h1{
     font-size: 4vw;
 }
