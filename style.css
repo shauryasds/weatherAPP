@@ -45,7 +45,7 @@ body {
   margin: auto;
   background-color: whitesmoke;
 }
-  .main:hover{
+  .main:hover,.container:hover{
     background-color: rgb(222, 201, 201);
   
 cursor: pointer;
