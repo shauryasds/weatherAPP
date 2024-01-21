@@ -5,7 +5,7 @@ async function apiFetch(){
     
     let city=document.getElementById("city").value;
     
-    document.getElementById("city").value="SEARCHING"
+    document.getElementByClassName("city")[0].innerText='SEARCHING';
 const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     let  Apiresponse=await fetch(url);
@@ -38,10 +38,10 @@ const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api
 
 
 }
+document.getElementByClassName("city")[0].innerText='WEATHER APP';
 search.addEventListener('click',(e)=>{
-    apiFetch()
+    apiFetch();
     
-    document.getElementById("city").value=""
     
 })
 
